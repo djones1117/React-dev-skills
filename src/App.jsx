@@ -1,7 +1,7 @@
 import NewSkillForm from "./NewSkillForm";
 import SkillList from "./SkillList";
 import "./App.css";
-
+import "./styles.css";
 const skills = [
   { name: "HTML", level: 5 },
   { name: "Python", level: 2 },

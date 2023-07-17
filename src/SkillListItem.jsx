@@ -1,4 +1,6 @@
-export default function SkillListItem({ skill }) {
+import "./SkillListItem.css";
+
+export default function SkillListItem({ skill, index }) {
            
-    return (<li>name: {skill.name} level: {skill.level}</li>)
+    return (<li className={"SkillListItem"}style={{backgroundColor: index % 2 ? "lavender": "plum"}}> {skill.name} Level: {skill.level}</li>);
 }
