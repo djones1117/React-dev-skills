@@ -1,3 +1,3 @@
 export default function SkillListItem() {
-    return <li>SkillListItem</li>;
+  return <li>SkillListItem</li>;
 }

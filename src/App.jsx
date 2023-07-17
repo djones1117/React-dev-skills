@@ -1,15 +1,16 @@
+import NewSkillForm from "./NewSkillForm";
 import SkillList from "./SkillList";
-import './App.css'
+import "./App.css";
 
 export default function App() {
-  
-
   return (
     <div className="App">
-     <h1>React Dev Skills</h1> 
-     <SkillList></SkillList>
+      <h1>React Dev Skills</h1>
+      <SkillList></SkillList>
+      <hr></hr>
+      <form>
+        <NewSkillForm></NewSkillForm>
+      </form>
     </div>
   );
 }
-
-//export default App
