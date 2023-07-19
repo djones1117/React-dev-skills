@@ -1,6 +1,12 @@
+import { useState } from "react";
 import "./NewSkillForm.css";
 
 export default function NewSkillForm() {
+    const [skills, setSkills] = useState({
+        name: "",
+        level: 3
+    });
+    
   return (
     <form className="NewSkillForm">
       <label>Skill</label>
