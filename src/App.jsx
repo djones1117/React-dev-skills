@@ -12,17 +12,14 @@ export default function App() {
     { name: "JavaScript", level: 4 },
   ]);
 
-const skillListItems = skills.map((itemObject, idx) => {
-  return <skillListItem item={itemObject} key={idx}/>
-});
-console.log(skillListItems)
+  const skillListItems = skills.map((itemObject, idx) => {
+    return <skillListItem item={itemObject} key={idx} />;
+  });
+  console.log(skillListItems);
 
-  function addSkill(skillFromTheForm){
-    console.log(skillFromTheForm, 'skill from the form');
-    setSkills([
-      skillFromTheForm,
-      ...skills
-    ])
+  function addSkill(skillFromTheForm) {
+    console.log(skillFromTheForm, "skill from the form");
+    setSkills([skillFromTheForm, ...skills]);
   }
   return (
     <div className="App">
@@ -30,7 +27,7 @@ console.log(skillListItems)
       <SkillList skills={skills} />
       <hr></hr>
       <section>
-        <NewSkillForm addSkill={addSkill}/>
+        <NewSkillForm addSkill={addSkill} />
       </section>
     </div>
   );
